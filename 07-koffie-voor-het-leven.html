@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function berekenHoeveelheid() {
+        var geboortejaar = prompt("Wat is je geboortejaar?");
+        var wishfulThinking = prompt("Hoe oud denk je te worden?");
+        var aantalKoppenKoffie = prompt(
+          "Hoeveel koppen koffie drink je per dag?"
+        );
+        var nu = new Date();
+        var ouderdom = nu.getFullYear() - geboortejaar;
+        var koffie = (wishfulThinking - ouderdom) * aantalKoppenKoffie * 365;
+        document.write(
+          "Je bent nu " +
+            ouderdom +
+            " jaar. Tegen " +
+            aantalKoppenKoffie +
+            " koppen koffie per dag zal je " +
+            koffie +
+            " koppen koffie drinken als je " +
+            wishfulThinking +
+            " jaar oud zal worden."
+        );
+      }
+      berekenHoeveelheid();
+    </script>
+  </body>
+</html>
