@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var alfabet =
+        ("A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z");
+      var alfabetScore =
+        (1,
+        3,
+        3,
+        2,
+        1,
+        4,
+        2,
+        4,
+        1,
+        8,
+        5,
+        1,
+        3,
+        1,
+        1,
+        3,
+        10,
+        1,
+        1,
+        1,
+        1,
+        4,
+        4,
+        8,
+        4,
+        10);
+      document.write("<h1>Scrabble punten berekenaar</h1>");
+      var woord = prompt("Van welk woord wil je de score berekenen?");
+      if (woord == null) {
+        alert("U heeft geannuleerd!");
+      } else if (woord.length == 0) {
+        alert("U heeft niets ingevuld");
+      } else if (woord.indexOf(" ") != -1) {
+        alert("U heeft spaties ingegeven");
+      }
+      document.write("Het woord is " + woord);
+
+      lengte = woord.length;
+    </script>
+  </body>
+</html>
