@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="toonCelsius()">Omzetten C naar F</button>
+    <button onclick="toonFahrenheit()">Omzetten F naar C</button>
+
+    <script>
+      function toonCelsius() {
+        var celsius = prompt("Hoeveel graden wil je omzetten?");
+        alert(celsius + "°C is " + ((celsius * 9) / 5 + 32) + "°F");
+      }
+      function toonFahrenheit() {
+        var fahrenheit = prompt("Hoeveel graden wil je omzetten?");
+        alert(
+          fahrenheit +
+            "°F is " +
+            (((fahrenheit - 32) * 5) / 9).toFixed(0) +
+            "°C"
+        );
+      }
+    </script>
+  </body>
+</html>
